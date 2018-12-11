@@ -1,0 +1,29 @@
+<!doctype html>
+<head>
+<title>My Account</title>
+</head>
+<body>
+    <h3>Hello {{ user_name }}!</h3>
+    <table>
+    <tr>
+      <th> Container ID </th>
+      <th> SSH Password </th>
+      <th> Port </th>
+      <th> Jupyter URL </th>
+    </tr>
+    {% for c in user_data %}
+        <tr>
+        <td> {{c.containerID}} </td>
+        <td> {{c.sshPassword}} </td>
+        <td> {{c.port}} </td>
+        <td> <a target="_blank" href="{{c.jupyterURL}}">{{c.jupyterURL}}</a> </td>
+        </tr>
+    {% endfor%}
+    </table>
+        <form action = "/user/{{user_name}}" method = "post">
+            <h4>Create New container</h4>
+            Enter SSH password for new container: <input type="text" name = "ssh_pass" required/>
+            <input type="hidden" name = "uname" />
+            <input type="submit" value="Create Container" />
+        </form>
+</body>

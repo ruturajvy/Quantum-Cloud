@@ -1,0 +1,53 @@
+Deep Learning 
+git clone https://github.com/kjpark30/csc510_project
+
+Curl, wget, aria2
+git clone https://goo.gl/3DoUZb
+
+VSCode vs Atom
+https://goo.gl/3DoUZb
+
+Message Broker Analysis
+https://github.com/rayandasoriya/Message_Broker_Analysis
+
+Matlibplot vs Ployly
+https://github.com/FahmidMorshed/Matplotlib-vs-Plotly\
+
+Trac vs MantisBT
+https://github.ncsu.edu/ojparkhe/SE_Project
+
+Ansible vs Stackstorm
+https://github.ncsu.edu/akrish12/CSC510_SoftwareEngineering_Fall2018_Ansible-vs-StackStorm
+
+Ansible vs CFEngine
+https://github.com/Chiaggs/ansible-vs-cfengine
+
+Puppet vs Gitlab
+https://github.ncsu.edu/r-uvasow/puppet-vs-gitlab
+
+React vs Backbone
+https://github.ncsu.edu/pmgandh2/se_project
+
+React vs Ember.js
+https://github.ncsu.edu/hpalani/SE_Project
+
+Spring vs Rails
+https://github.com/darshanbhandari123/springwithJS
+https://github.com/SameerPoudwal/SERailsUI
+https://bitbucket.org/ashwinrisbood/spring_demo/src/master/
+https://github.com/SameerPoudwal/SE-railsApiApp
+
+Ansible vs Puppet
+https://github.com/pratik-abhyankar/ansible-vs-puppet-analysis.git
+
+React.js vs Knockout
+https://github.com/ShravaniYellu/CSC510_s_azocom/tree/master
+
+Angular vs Ember
+https://github.ncsu.edu/pshabri/CSC510-SEProject-Angular.js-Ember.js-Analysis-S_akewen.git
+
+Nginx vs Apache httpd
+https://github.com/skywhat/CSC510 	
+
+Chef vs Salt
+https://github.ncsu.edu/vannama/CSC510_Team_s_apapog.git

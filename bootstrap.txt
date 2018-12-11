@@ -1,0 +1,21 @@
+sudo su -
+apt-get install git
+git clone 
+apt-get install -y docker
+apt-get install -y docker.io
+apt-get install -y python 3.5 python3-pip python3-dev
+python3 -m pip install --upgrade pip
+
+pip install boto3
+pip install --user flask
+pip install --user qiskit
+pip install --user IBMQuantumExperience
+pip install --user pyyaml
+apt-get install python-yaml
+
+export FLASK_APP=main.py
+export FLASK_ENV=development
+
+sudo iptables -I INPUT -p tcp --dport 1000 -j ACCEPT
+
+python3 main.py

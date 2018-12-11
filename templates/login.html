@@ -1,0 +1,19 @@
+<!doctype html>
+<head>
+<title>Login</title>
+</head>
+
+{% if errmsg %}
+  <h4> {{ errmsg }} </h4> <br/>
+  <a href="/login">Login again</a>
+{% else %}
+
+  <h4>Login:</h1>
+    
+  <form action = "/login" method = "post">
+    Username: <input type="text" name = "uname" required />
+    Password: <input type="text" name ="passwd"required />
+    <input type="submit" id="btn_login" value="Login" />
+  </form>
+
+{% endif %}

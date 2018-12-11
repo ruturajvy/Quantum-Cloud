@@ -4,7 +4,9 @@ import time
 import socket
 import sys
 import json
+import boto3
 def create_jupyter_container(ssh_password):
+	ec2 = boto3.client('ec2')
 	stdout = subprocess.check_output(['docker','images'])
 	flag = 0
 	lines = stdout.split('\n')
@@ -23,6 +25,8 @@ def create_jupyter_container(ssh_password):
 	ssh_port_combination = str(ssh_port)+':'+'22'
 	container_name = 'container'+str(number)
 	stdout = subprocess.check_output(['docker','run','-it','-d','--name',container_name,'-p',port_combination,'-p',ssh_port_combination,'ubuntu_jupyter'])
+	ec2.authorize_security_group_ingress(GroupId="sg-022b9f344dfdc04cbs",IpProtocol="tcp",CidrIp="0.0.0.0/0",FromPort=http_port,ToPort=http_port)
+	ec2.authorize_security_group_ingress(GroupId="sg-022b9f344dfdc04cbs",IpProtocol="tcp",CidrIp="0.0.0.0/0",FromPort=ssh_port,ToPort=ssh_port)
 	http_port = http_port+1
 	my_file['http_port'] = http_port
 	ssh_port = ssh_port+1

@@ -1,4 +1,4 @@
-#Quantum Computing in the Cloud
+# Quantum Computing in the Cloud
 A Cloud based solution where Quantum computers are allocated as a container running on VCL (Virtual Computing Lab) instance to the user on demand. This container system utilizes Jupyter notebook. IBM Quantum simulators are used to execute Quantum algorithms.
 
 Prerequisites

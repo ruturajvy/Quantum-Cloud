@@ -18,7 +18,7 @@ sudo iptables -I INPUT -p tcp --dport 1000 -j ACCEPT
 Code Files description
 main.py - Application entry file
 Dockerfile - Creates Jupyter container with necessary dependencies
-Qconfig.py - contains the IBM Quantum API tiken
+Qconfig.py - contains the IBM Quantum API token
 metadata.yaml - stores details of the container to be created next
 script.py - contains method to create new container
 user_data.json - contains user details

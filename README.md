@@ -9,8 +9,8 @@ Installation - Following commands are executed in order to set up the infrastruc
 sudo apt-get install docker.io  
 sudo apt-get -y install python3.5 python3-pip python3-dev  
 python3 -m pip install --upgrade pip  
-pip insatll --user flask  
-pip insatll --user pyyaml  
+pip install --user flask  
+pip install --user pyyaml  
 sudo apt-get install python-yaml  
 sudo groupadd docker  
 sudo usermod -aG docker $USER  
